@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #8e44ad;
+    color: #fff;
+}
+
+.counter-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10vmin;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vmin;
+}
+
+.counter {
+    font-size: 7vmin;
+}
