@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="psw-container">
+  <h2>Password generator</h2>
+  <div class="psw-generate">
+    <span id="psg-result" class="psw-generate__result"></span>
+    <button id="psg-clipboard" class="pws-generate__btn">
+      <i aria-hidden="true" class="far fa-clipboard"></i>
+    </button>
+  </div>
+
+  <div class="psw-settings">
+    <div class="psw-setting">
+      <label class="psw-setting__label">Password length
+        <input id="psw-length" type="number" min="8" maxlength="20" value="20">
+      </label>
+    </div>
+    <div class="psw-setting">
+      <label class="psw-setting__label">Include uppercase letters
+        <input id="psw-uppercase" type="checkbox" checked>
+      </label>
+    </div>
+    <div class="psw-setting">
+      <label class="psw-setting__label">Include lowercase letters
+        <input id="psw-lowercase" type="checkbox" checked>
+      </label>
+    </div>
+    <div class="psw-setting">
+      <label class="psw-setting__label">Include numbers letters
+        <input id="psw-numbers" type="checkbox" checked>
+      </label>
+    </div>
+    <div class="psw-setting">
+      <label class="psw-setting__label">Include symbols letters
+        <input id="psw-symbols" type="checkbox" checked>
+      </label>
+    </div>
+  </div>
+
+  <button id="psw-generate"
+          class="pws-generate__btn_size_lg">Generate Password
+  </button>
+</div>
+
+<script src="https://kit.fontawesome.com/7da0268b1c.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
