@@ -53,7 +53,7 @@ input[type="search"] {
     padding: 0 1.6rem;
     border-radius: var(--rad);
     appearance: none;
-/ / for iOS input [ type = "search" ] roundedness issue . border-radius alone doesn 't work transition: all var(--dur) var(--bez);
+    /*for iOS input [ type = "search" ] roundedness issue */
     transition-property: width, border-radius;
     z-index: 1;
     position: relative;
@@ -61,7 +61,7 @@ input[type="search"] {
 
 button {
     display: none;
-/ / prevent being able to tab to it position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     width: var(--btn-width);
