@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-btn_open {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+.aside-nav {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform .3s ease-in-out;
+}
+
+.aside-nav_visible {
+    transform: translateX(0);
+}
+
+.aside-nav_clr_black {
+    background-color: rgb(34, 41, 31);
+    width: 60%;
+    max-width: 50vmin;
+    min-width: 320px;
+    transition-delay: 0.4s;
+}
+
+.aside-nav_clr_black.aside-nav_visible {
+    transition-delay: 0s;
+}
+
+.aside-nav_clr_red {
+    background-color: rgb(229, 7, 20);
+    width: 95%;
+    transition-delay: 0.2s;
+}
+
+.aside-nav_clr_red.aside-nav_visible {
+    transition-delay: .2s;
+}
+
+.aside-nav_clr_white {
+    background-color: white;
+    width: 95%;
+    position: relative;
+    padding: 2.4rem;
+    transition-delay: 0s;
+}
+
+.aside-nav_clr_white.aside-nav_visible {
+    transition-delay: .4s;
+}
+
+.nav-close-btn {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.3rem;
+    opacity: .3;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list__item {
+    margin: 1.2rem 0;
+}
+
+.nav-list__item .nav-list {
+    padding-left: 1.4rem;
+}
+
+.nav-list__link {
+    color: rgb(34, 31, 31);
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
