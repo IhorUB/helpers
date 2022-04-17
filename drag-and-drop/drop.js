@@ -1,6 +1,5 @@
 //author  https://medium.com/devschacht/https-medium-com-kasimoka-joseph-zimmerman-drag-drop-file-uploader-vanilla-js-de850d74aa2f
 
-
 let dropArea = document.getElementById('drop-area');
 
 //progress
